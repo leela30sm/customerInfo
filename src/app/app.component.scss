@@ -1,0 +1,20 @@
+.navigation {
+    background-color: lightgrey;
+    display: flex;
+}
+
+.link {
+    width: 250px;
+    padding: 5px;
+    margin: 10px;
+    background-color: lightgrey;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: grey;
+}

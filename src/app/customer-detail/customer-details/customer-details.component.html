@@ -1,0 +1,20 @@
+<div>
+    <h1>Customer Details</h1>
+</div>
+<div class="customersList" *ngFor="let customersList of customersLists">
+    <div>
+      {{'#'+customersList.id}}
+      <br>
+      {{customersList.name}}
+      <br>
+      {{customersList.email}}
+      <br>
+      {{customersList.address.street+','+customersList.address.suite+','+customersList.address.city}}
+    </div>
+    <hr *ngIf="customersLists.length > 1">
+    <br>
+</div>
+<div *ngIf="customersLists.length === 1">
+  <a class="link" *ngIf="customersLists[0].id !== 1" (click)="move(customersLists[0].id-1)">Prev</a>
+  <a class="link" *ngIf="customersLists[0].id !== 10" (click)="move(customersLists[0].id+1)">Next</a>
+</div>

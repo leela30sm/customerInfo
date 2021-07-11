@@ -1,0 +1,5 @@
+<nav class="navigation">
+  <a class="link" [class.active] = "page === 'cust'" (click)="toggle('cust')" routerLink="/customer">Customers</a>
+  <a class="link" [class.active] = "page === 'custDet'" (click)="toggle('custDet')" routerLink="/customerdetail">Customer Details</a>
+</nav>
+<router-outlet></router-outlet>

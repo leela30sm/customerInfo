@@ -1,0 +1,6 @@
+<div>
+    <h1>Customers</h1>
+</div>
+<div class="customersList" *ngFor="let customersList of customersLists" (click)="custDetail(customersList.id)">
+    {{customersList.name}}
+</div>
